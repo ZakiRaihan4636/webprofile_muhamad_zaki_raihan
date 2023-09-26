@@ -276,36 +276,57 @@ h5 {
 
 .card {
   display: flex;
-  /* flex: wrap; */
+  flex-direction: column; /* Menyusun isi card secara vertikal */
+  align-items: center; /* Pusatkan secara horizontal */
   margin: 10px;
-  /* margin-right: 5rem; */
   width: 20rem;
   height: 23rem;
   border: 1px solid white;
-  border-radius: 5px;
-}
-
-.icon-skills {
-  width: 150px;
-  height: 150px;
-  position: relative;
-  background: white;
-  /* top: 10px; */
-  /* left: 85px; */
-  right: 85px;
-  bottom: 70px;
-  border-radius: 50%;
-  border: 1px solid white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative; /* Tambahkan posisi relatif untuk mengontrol posisi lingkaran */
 }
 
 .list-skills {
-  /* width: 15rem; */
-  /* padding: 3rem; */
+  margin-top: 90px;
+  flex-grow: 1; /* Biarkan elemen ini memenuhi sisa tinggi card */
+  width: 100%; /* Lebarkan list-skills agar sesuai dengan card */
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  line-height: 0;
+  /* border: 1px solid white; */
 }
 
 .item-skills {
+  margin: 0 2rem 1rem 2rem;
+  margin-top: 10px;
   color: white;
+}
+
+.subtitle-skills {
+  margin-bottom: 3rem;
+  color: white;
+  text-align: center;
+}
+
+.icon-skills {
+  /* z-index: 1; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140px;
+  height: 140px;
+  background: white;
+  border-radius: 50%;
+  /* border: 1px solid white; */
+
+  position: absolute; /* Jadikan posisi absolut untuk mengontrol posisi */
+  /* bottom:20px */
+  transform: translateX(-50%); /* Pusatkan secara horizontal */
+  transform: translateY(-50%); /* Pusatkan secara horizontal */
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
 }
