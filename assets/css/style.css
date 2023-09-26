@@ -14,6 +14,12 @@ body {
   margin: 0 30px 30px 30px;
   padding: 30px;
   border-radius: 2px;
+  box-shadow: 0 0px 1px white;
+}
+
+.icon-nav li {
+  width: 150px;
+  margin: 0 0 0px 15px;
 }
 
 #navbar ul {
@@ -21,8 +27,8 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between; /* Menyusun tautan navbar dan ikon ke kanan */
-  align-items: center; /* Mengatur vertikal tengah */
+  justify-content: space-between;
+  align-items: center;
 }
 
 #navbar ul li {
@@ -30,11 +36,14 @@ body {
   margin-right: 20px;
   color: #9c9c9c;
   cursor: pointer;
-  transition: color 0.3s; /* Transisi warna saat mengarahkan kursor */
+  font-size: 1.3rem;
+  font-weight: 400;
+  transition: color 0.3s;
+  letter-spacing: 0.00875rem;
 }
 
 #navbar ul li:hover {
-  color: white; /* Warna saat mengarahkan kursor */
+  color: white;
 }
 
 /* Styling untuk ikon */
@@ -58,7 +67,7 @@ body {
 }
 
 .icon li:hover {
-  color: white; 
+  color: white;
 }
 
 #home {
@@ -66,6 +75,7 @@ body {
   border: 1px solid black;
   padding: 0 3.5rem;
   margin-top: 4.7rem;
+  height: 32rem;
 }
 
 .home-content {
@@ -119,11 +129,37 @@ body {
 }
 
 .image-profile {
+  width: 300px;
+  height: 100%;
+  border-radius: 50%;
+  margin: 0 50px;
+}
+
+.profile-image {
   border: 1px solid white;
-  width: 500px;
-  height: 300px;
-  /* border-radius: 50%; */
-  margin: 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  position: relative;
+  animation: profile__animate 8s ease-in-out infinite 1s;
+  box-shadow: inset 0 0 0 9px rgb(255 255 255 /30%);
+}
+
+@keyframes profile__animate {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 .worked-with {
@@ -142,7 +178,7 @@ h5 {
   color: white;
   font-size: 16px;
   padding: 30px 70px;
-  /* margin: 0 10px; */
+  box-shadow: 0 0px 1px white;
   border-radius: 7px;
   border: 1px solid #1b1b1b;
   transition: background-color 0.3s; /* Transisi warna latar belakang saat hover */
@@ -150,4 +186,28 @@ h5 {
   align-items: center;
   justify-content: center;
   width: ;
+}
+
+/* about */
+#about {
+  padding: 3.7rem;
+  background-color: ##fff;
+  max-width: 100%;
+  height: 80%;
+}
+
+.about-content {
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  font-family: Raleway;
+}
+
+.title-desciption {
+  text-align: center;
+  font-size: 1rem;
+  font-family: IBM Plex Mono;
+  color: #1b1b1b;
 }
