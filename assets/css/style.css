@@ -75,7 +75,7 @@ body {
   border: 1px solid black;
   padding: 0 3.5rem;
   margin-top: 4.7rem;
-  height: 32rem;
+  height: 34rem;
 }
 
 .home-content {
@@ -196,18 +196,116 @@ h5 {
   height: 80%;
 }
 
-.about-content {
+.title-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
-  font-size: 2rem;
-  text-align: center;
-  font-family: Raleway;
+  color: #1b1b1b;
 }
 
-.title-desciption {
+.title-about {
+  color: #ffa217;
+}
+
+.title-description {
+  width: 70%;
   text-align: center;
-  font-size: 1rem;
-  font-family: IBM Plex Mono;
-  color: #1b1b1b;
+}
+
+.about-content {
+  margin-top: 50px;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-description {
+  width: 50%;
+  text-align: justify;
+  line-height: 1.5rem;
+}
+
+.image-container {
+  width: 50%;
+}
+
+.cv {
+  display: inline-block;
+  padding: 10px 20px;
+  background: orange;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cv:hover {
+  background-color: #0056b3;
+}
+
+#skills {
+  padding: 3.7rem;
+  background-color: #080808;
+  max-width: 100%;
+}
+
+.title-skills {
+  color: white;
+}
+
+.title-description-skills {
+  color: white;
+  width: 70%;
+  text-align: center;
+}
+
+.content-skills {
+  margin-top: 7rem;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card {
+  display: flex;
+  /* flex: wrap; */
+  margin: 10px;
+  /* margin-right: 5rem; */
+  width: 20rem;
+  height: 23rem;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.icon-skills {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  background: white;
+  /* top: 10px; */
+  /* left: 85px; */
+  right: 85px;
+  bottom: 70px;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.list-skills {
+  /* width: 15rem; */
+  /* padding: 3rem; */
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+.item-skills {
+  color: white;
 }
