@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  font-family: "roboto";
 }
 
 .container {
@@ -32,6 +33,7 @@ body {
 }
 
 #navbar ul li {
+  text-decoration: none;
   display: inline;
   margin-right: 20px;
   color: #9c9c9c;
@@ -42,7 +44,17 @@ body {
   letter-spacing: 0.00875rem;
 }
 
+.link {
+  text-decoration: none;
+  color: #9c9c9c;
+  font-family: "IBM Plex Mono";
+}
+
 #navbar ul li:hover {
+  color: white;
+}
+
+.link:hover {
   color: white;
 }
 
@@ -59,7 +71,7 @@ body {
   display: flex;
 }
 
-.icon li {
+.icon li a {
   margin-right: 20px;
   color: #9c9c9c;
   cursor: pointer;
@@ -75,7 +87,7 @@ body {
   border: 1px solid black;
   padding: 0 3.5rem;
   margin-top: 4.7rem;
-  height: 34rem;
+  height: 37rem;
 }
 
 .home-content {
@@ -109,7 +121,7 @@ body {
   font-family: IBM Plex Mono;
   margin-bottom: 30px;
   line-height: 1.5;
-  width: 26rem;
+  width: 35rem;
 }
 
 .home-content a {
@@ -121,11 +133,11 @@ body {
   text-decoration: none;
   font-size: 18px;
   border-radius: 5px;
-  transition: background-color 0.3s; /* Transisi warna latar belakang saat hover */
+  transition: background-color 0.3s;
 }
 
 .home-content a:hover {
-  background-color: #0056b3; /* Ganti dengan warna latar belakang saat hover yang sesuai */
+  background-color: #0056b3;
 }
 
 .image-profile {
@@ -165,23 +177,24 @@ body {
 .worked-with {
   display: flex;
   justify-content: space-between;
-  /* margin: 20px; */
-  /* padding: 20px; */
+  flex: wrap;
 }
 
 h5 {
+  margin-top: 3rem;
   color: #ffffff;
+  font-family: Raleway;
 }
 
 .worked-item {
-  background-color: #1b1b1b; /* Ganti dengan warna latar belakang yang sesuai */
+  background-color: #1b1b1b;
   color: white;
   font-size: 16px;
   padding: 30px 70px;
   box-shadow: 0 0px 1px white;
   border-radius: 7px;
   border: 1px solid #1b1b1b;
-  transition: background-color 0.3s; /* Transisi warna latar belakang saat hover */
+  transition: background-color 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -205,15 +218,20 @@ h5 {
 
 .title {
   color: #1b1b1b;
+  font-family: "Raleway";
 }
 
 .title-about {
   color: #ffa217;
+  font-family: "Raleway";
+  font-size: 1rem;
 }
 
 .title-description {
   width: 70%;
   text-align: center;
+  color: #9c9c9c;
+  font-family: "IBM Plex Mono";
 }
 
 .about-content {
@@ -227,6 +245,7 @@ h5 {
   width: 50%;
   text-align: justify;
   line-height: 1.5rem;
+  font-family: "IBM Plex Mono";
 }
 
 .image-container {
@@ -257,12 +276,14 @@ h5 {
 
 .title-skills {
   color: white;
+  font-family: "Raleway";
 }
 
 .title-description-skills {
-  color: white;
+  color: #9c9c9c;
   width: 70%;
   text-align: center;
+  font-family: "IBM Plex Mono";
 }
 
 .content-skills {
@@ -274,23 +295,23 @@ h5 {
   align-items: center;
 }
 
-.card {
+.card-skills {
   display: flex;
-  flex-direction: column; /* Menyusun isi card secara vertikal */
-  align-items: center; /* Pusatkan secara horizontal */
+  flex-direction: column;
+  align-items: center;
   margin: 10px;
   width: 20rem;
   height: 23rem;
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  position: relative; /* Tambahkan posisi relatif untuk mengontrol posisi lingkaran */
+  position: relative;
 }
 
 .list-skills {
   margin-top: 90px;
-  flex-grow: 1; /* Biarkan elemen ini memenuhi sisa tinggi card */
-  width: 100%; /* Lebarkan list-skills agar sesuai dengan card */
+  flex-grow: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   line-height: 0;
@@ -298,15 +319,18 @@ h5 {
 }
 
 .item-skills {
+  color: #9c9c9c;
   margin: 0 2rem 1rem 2rem;
   margin-top: 10px;
   color: white;
+  font-family: "IBM Plex Mono";
 }
 
 .subtitle-skills {
   margin-bottom: 3rem;
   color: white;
   text-align: center;
+  font-family: "Raleway";
 }
 
 .icon-skills {
@@ -320,13 +344,267 @@ h5 {
   border-radius: 50%;
   /* border: 1px solid white; */
 
-  position: absolute; /* Jadikan posisi absolut untuk mengontrol posisi */
+  position: absolute;
   /* bottom:20px */
-  transform: translateX(-50%); /* Pusatkan secara horizontal */
-  transform: translateY(-50%); /* Pusatkan secara horizontal */
+  transform: translateX(-50%);
+  transform: translateY(-50%);
   overflow: hidden;
 }
 
-.card:hover {
+.card-skills:hover {
   box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+}
+
+#portofolio {
+  padding: 3.7rem;
+  background-color: ##fff;
+  max-width: 100%;
+  height: 80%;
+  /* display: flex; */
+}
+
+.content-portofolio {
+  /* border: 1px solid black; */
+  margin-top: 4rem;
+  display: flex;
+  gap: 2px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-portoflio {
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+
+.image-portofolio {
+  /* opacity: 0.5; */
+}
+
+.card-content {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.card-content a {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway";
+}
+
+.tools {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.tools span {
+  background-color: grey;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin: 0 5px;
+  font-family: "IBM Plex Mono";
+}
+
+.div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.view-all-portofolio {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 10px 20px;
+  background: #3f8e00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#kontak {
+  padding: 3.7rem;
+  background-color: #080808;
+  max-width: 100%;
+  height: 100%;
+  color: white;
+}
+
+form {
+  margin-top: 20px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.7rem;
+}
+
+.form-control {
+  margin-top: 5px;
+  width: 30rem;
+  border: 0.1px solid black;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.form-message {
+  margin-top: 5px;
+  width: 30rem;
+  border: 0.1px solid black;
+  border-radius: 5px;
+  height: 150px;
+}
+
+.button {
+  margin-top: 10px;
+  display: flex;
+  padding: 10px 20px;
+  border: 1px;
+  border-radius: 5px;
+  width: 30.3rem;
+  justify-content: center;
+  background: #3f8e00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+#footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #1b1b1b;
+  max-width: 100%;
+  height: 100%;
+  color: white;
+}
+
+label {
+  color: white;
+  font-size: 0.9rem;
+  font-family: "IBM Plex Mono";
+}
+/* Add a media query for smaller screens */
+@media screen and (max-width: 768px) {
+  #home {
+    height: 70rem;
+  }
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-profile {
+    margin: 0;
+  }
+
+  .home-content p {
+    width: 100%;
+  }
+
+  .worked-with {
+    display: grid; /* Use grid instead of flex */
+    grid-template-columns: repeat(2, 1fr); /* 2 columns with equal width */
+    grid-template-rows: repeat(2, auto); /* 2 rows with automatic height */
+    gap: 20px; /* Add some spacing between items */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+
+  .worked-item {
+    /* You can adjust the styling of the .worked-item as needed */
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 16px;
+    padding: 30px 70px;
+    box-shadow: 0 0px 1px white;
+    border-radius: 7px;
+    border: 1px solid #1b1b1b;
+    transition: background-color 0.3s;
+  }
+
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-description {
+    text-align: center;
+    width: 100%;
+  }
+
+  .image-about {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #skills {
+    height: 112rem;
+  }
+  .content-skills {
+    margin-top: 38rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-skills {
+    margin: 50px 0;
+    padding: 0 0 50px;
+  }
+
+  .list-skills {
+    /* margin-top: 0; */
+  }
+
+  .subtitle-skills {
+    margin-bottom: 2rem;
+  }
+
+  .content-portofolio {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-portoflio {
+    margin-bottom: 20px;
+  }
+
+  .div {
+    margin-top: 0;
+  }
+
+  .form-control {
+    /* width: 100%; */
+  }
+
+  .form-message {
+    /* width: 100%; */
+  }
+
+  .button {
+    /* width: 100%; */
+  }
 }

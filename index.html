@@ -7,10 +7,14 @@
   <title>Portofolio - Muhamad Zaki Raihan</title>
   <link rel="stylesheet" href="./assets/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Font+Name&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway&display=swap">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 </head>
 
 <body>
@@ -19,27 +23,30 @@
     <section id="navbar">
       <nav>
         <ul>
-          <li class="item-nav">Home</li>
-          <li class="item-nav">About me</li>
-          <li class="item-nav">Skills</li>
-          <li class="item-nav">Portofolio</li>
-          <li class="item-nav">Get in touch</li>
+          <li class="item-nav"><a class="link" href="#home">Home</a></li>
+          <li class="item-nav"><a class="link" href="#about">About Me</a></li>
+          <li class="item-nav"><a class="link" href="#skills">Skills</a></li>
+          <li class="item-nav"><a class="link" href="#portofolio">Portfolio</a></li>
+          <li class="item-nav"><a class="link" href="#kontak">Get In Touch</a></li>
           <div class="icon-nav">
-            <li><i class="fa-brands fa-linkedin-in"></i></li>
-            <li><i class="fa-brands fa-github"></i></li>
-            <li><i class="fa-brands fa-instagram"></i></li>
+            <li class="item-nav"><a class="link" href=""><i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li class="item-nav"><a class="link" href=""><i class="fa-brands fa-github"></i></a></li>
+            <li class="item-nav"><a class="link" href=""><i class="fa-brands fa-instagram"></i></a></li>
           </div>
         </ul>
       </nav>
     </section>
 
     <!-- start Halaman home -->
-    <section id="home">
+    <section data-aos="fade-up" id="home">
       <div class="home-content">
         <div class="description">
-          <h1><span>Muhamad Zaki Raihan</span></h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus ab exercitationem magnam tempore dignissimos
-            harum distinctio excepturi voluptate cum consequatur.</p>
+          <h1>Hello, my name is,<br><span>Muhamad Zaki Raihan</span></h1>
+          <p>I'm a full-stack developer specialised in frontend and backend development for complex scalable web apps. I
+            write about
+            web development on my blog and regularly speak at various web conferences and meetups. Want to know how I
+            may help your
+            project? Check out my project case studies and resume.</p>
           <a href="#">Let's get started</a>
         </div>
         <div class="image-profile">
@@ -229,7 +236,7 @@
     <!-- end home -->
   </div>
 
-  <section id="about">
+  <section data-aos="fade-up" id="about">
     <div class="title-content">
       <h2 class="title">About me</h2>
       <p class="title-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptatem eligendi ea
@@ -242,10 +249,9 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas quis adipisci sequi! Officiis rem, ad
           sapiente ab ipsa autem vero labore sequi repellat hic. Ullam unde distinctio non ducimus ad itaque reiciendis
           vero quas. Ea facere cupiditate repudiandae repellat quisquam sunt pariatur dolore deleniti est quod ab nobis
-          placeat, excepturi voluptatibus dolorum consequatur quidem atque assumenda velit. Excepturi odio, eaque
-          incidunt similique assumenda voluptates vitae magnam modi odit tempora explicabo dolorem debitis nulla.
           Voluptatum earum ad adipisci iste, sapiente explicabo excepturi mollitia voluptates, reiciendis illum in eos
-          numquam autem velit pariatur! Omnis, maiores minus nam quia deleniti magni qui voluptatum?</p>
+
+        </p>
         <a href="" class="cv">Download CV</a>
       </div>
       <div class="image-about">
@@ -263,40 +269,40 @@
         aspernatur, error ipsum.</p>
     </div>
     <div class="content-skills">
-      <div class="card">
+      <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="200" class="card-skills">
         <div class="list-skills">
           <h2 class="subtitle-skills">Front end</h2>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>React/Redux/Angular
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>React/Redux/Angular
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>Javascript
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>Javascript
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>Node.js
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>Node.js
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>HTML/CSS/SASS/LESS
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>HTML/CSS/SASS/LESS
           </p>
         </div>
         <div class="icon-skills">
           <p style="font-size:4rem"><i class="fa-solid fa-laptop-code"></i></p>
         </div>
       </div>
-      <div class="card">
+      <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="card-skills">
         <div class="list-skills">
           <h2 class="subtitle-skills">Backend</h2>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>PHP/Laravel
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>PHP/Laravel
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>Javascript/Exspress JS
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>Javascript/Exspress JS
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>PostgresSQL/MySQL
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>PostgresSQL/MySQL
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>MongoDB
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>MongoDB
           </p>
         </div>
         <div class="icon-skills">
@@ -304,20 +310,20 @@
         </div>
 
       </div>
-      <div class="card">
+      <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="700" class="card-skills">
         <div class="list-skills">
           <h2 class="subtitle-skills">Other</h2>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>DevOps
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>DevOps
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>Unit Testing
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>Unit Testing
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>UX/Wireframing
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>UX/Wireframing
           </p>
           <p class="item-skills">
-            <i style="margin-right: 20px;" class="fa-solid fa-check"></i>Sketch/Wordpress/Shopify
+            <i style="margin-right: 10px;" class="fa-solid fa-check"></i>Sketch/Wordpress/Shopify
           </p>
         </div>
         <div class="icon-skills">
@@ -327,18 +333,106 @@
     </div>
   </section>
 
-  <section id="portofolio">
+  <section data-aos="fade-up" id="portofolio">
+    <div class="title-content">
+      <h2 class="title">Portofolio</h2>
+      <p class="title-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptatem eligendi ea
+        tempora fugit. Debitis sapiente omnis labore earum dignissimos cupiditate enim optio, eos illo voluptas rem,
+        aspernatur, error ipsum.</p>
+    </div>
+    <div class="content-portofolio">
+      <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="300" class="card-portoflio">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="" width="350">
+        </div>
+        <div class="card-content">
+          <a href="">Web Development</a>
+          <div class="tools">
+            <span>PHP</span>
+            <span>Laravel</span>
+            <span>Mysql</span>
+            <span>SAAS</span>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="500" class="card-portoflio">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="" class="image-portofolio" width="350">
+        </div>
+        <div class="card-content">
+          <a href="">Web Development</a>
+          <div class="tools">
+            <span>PHP</span>
+            <span>Laravel</span>
+            <span>Mysql</span>
+            <span>SAAS</span>
+          </div>
+        </div>
+      </div>
+      <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="800" class="card-portoflio">
+        <div class="card-image">
+          <img
+            src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="" width="350">
+        </div>
+        <div class="card-content">
+          <a href="">Design</a>
+          <div class="tools">
+            <span>PHP</span>
+            <span>Laravel</span>
+            <span>Mysql</span>
+            <span>SAAS</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="div">
+      <a class="view-all-portofolio" href="">View All Project</a>
+    </div>
 
   </section>
 
-  <section id="kontak">
-
+  <section data-aos="fade-up" id="kontak">
+    <div class="title-content">
+      <h2 class="title-skills">Get in touch</h2>
+      <p class="title-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae voluptatem eligendi ea
+        tempora fugit. Debitis sapiente omnis labore earum dignissimos cupiditate enim optio, eos illo voluptas rem,
+        aspernatur, error ipsum.</p>
+    </div>
+    <div class="content-kontak">
+      <form action="">
+        <div class="form-group">
+          <label for="Email">Email</label>
+          <input type="text" class="form-control" name="Email" id="Email" placeholder="please enter your email">
+        </div>
+        <div class="form-group">
+          <label for="Email">Subject</label>
+          <input type="text" class="form-control" name="Email" id="Email" placeholder="please enter your subject">
+        </div>
+        <div class="form-group">
+          <label for="Email">Message</label>
+          <textarea type="text" class="form-message" name="Email" id="Email"
+            placeholder="please enter your message"></textarea>
+        </div>
+        <button class="button">Submit</button>
+      </form>
+    </div>
   </section>
 
   <section id="footer">
-    <p>Copyright &copy; 2021 <NAME>
+    <p>Copyright &copy; 2021 <b> Muhamad zaki Rahan</b>
     </p>
   </section>
 </body>
+
+<script>
+  AOS.init();
+
+
+</script>
 
 </html>
