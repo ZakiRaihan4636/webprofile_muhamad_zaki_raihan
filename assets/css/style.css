@@ -471,6 +471,7 @@ form {
   border: 0.1px solid black;
   border-radius: 5px;
   height: 150px;
+  resize: none;
 }
 
 .button {
@@ -557,6 +558,7 @@ label {
     margin-top: 60px;
     width: 100%;
     display: flex;
+    /* border-radius: 50%; */
     align-items: center;
     justify-content: center;
   }
