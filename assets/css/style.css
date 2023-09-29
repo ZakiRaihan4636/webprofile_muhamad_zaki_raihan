@@ -610,3 +610,161 @@ label {
     /* width: 100%; */
   }
 }
+
+#react-covid {
+  padding: 0 3.7rem;
+  height: 250px;
+}
+
+.title-header {
+  margin-top: 80px;
+  color: white;
+}
+
+.font-header {
+  line-height: 10px;
+  font-size: 3rem;
+   color: #fff;
+  font-family: Raleway;
+  font-size: 2.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+
+.font-sub-header {
+  font-size: 18px;
+  color: #9c9c9c;
+  font-family: IBM Plex Mono;
+  margin-bottom: 30px;
+  line-height: 1.5;
+  width: 70%;
+}
+
+#detail {
+  padding: 3.7rem;
+  /* height: 170px; */
+}
+
+.content-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-portfolio {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.all-content {
+  padding: 1rem 7.3rem;
+}
+
+.description {
+  font-size: 1.4rem;
+}
+
+.button-live {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #3f8e00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.view-content {
+  margin-top: 40px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-container {
+  margin-top: 50px;
+  height: 40rem;
+  position: relative;
+}
+
+.carousel-slide {
+  display: block;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-carousel {
+  /* margin-top: 20px; */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  width: 100%;
+  /* height: auto; */
+  border-radius: 8px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+#slide1:checked ~ #slide1,
+#slide2:checked ~ #slide2,
+#slide3:checked ~ #slide3 {
+  opacity: 1;
+}
+
+
+.carousel-nav {
+  position: absolute;
+  bottom: 10px;
+  top: 37.5rem;
+  width: 100%; /* Menambahkan lebar 100% */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;--= 
+}
+
+.dotNav {
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.dotNav:before {
+  content: "";
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: grey;
+
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+#slide1:checked ~ .carousel-nav label:nth-child(1):before,
+#slide2:checked ~ .carousel-nav label:nth-child(2):before,
+#slide3:checked ~ .carousel-nav label:nth-child(3):before {
+  background-color: #333;
+}
+
+
+.logo-tech{
+  width: 100%;
+  margin-top:3rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap
+}
+
+.logo-tech img {
+    margin: 0; /* Mengatur margin menjadi 0 */
+    width: 120px; /* Sesuaikan lebar gambar sesuai kebutuhan Anda */
+    height: auto; /* Membuat tinggi gambar otomatis sesuai aspek rasio */
+}
