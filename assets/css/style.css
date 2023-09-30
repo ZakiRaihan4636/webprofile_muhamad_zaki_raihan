@@ -665,7 +665,9 @@ label {
 }
 
 .description {
-  font-size: 1.4rem;
+  font-size: 1rem;
+    color: #9c9c9c;
+  font-family: "IBM Plex Mono";
 }
 
 .button-live {
@@ -678,6 +680,7 @@ label {
   font-size: 18px;
   border-radius: 5px;
   transition: background-color 0.3s;
+  font-family: "IBM Plex Mono";
 }
 
 .view-content {
